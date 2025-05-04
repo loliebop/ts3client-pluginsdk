@@ -19,7 +19,6 @@ if(UNIX)
     set_target_properties(${PLUGIN_NAME} PROPERTIES OUTPUT_NAME ${PLUGIN_NAME})
     set_target_properties(${PLUGIN_NAME} PROPERTIES SUFFIX ".so")
 elseif(WIN32)
-    # Falls auf Windows, kompiliere eine DLL
     set_target_properties(${PLUGIN_NAME} PROPERTIES OUTPUT_NAME ${PLUGIN_NAME})
     set_target_properties(${PLUGIN_NAME} PROPERTIES SUFFIX ".dll")
 endif()
